@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A3E3CC</color>
+    <color name="colorPrimaryDark">#0B1925</color>
+    <color name="colorAccent">#1D6A63</color>
+    <color name="bgTextColor">#0F4943</color>
+    <color name="smallCards">#083D4A</color>
+    <color name="mainbgcolor">#134655</color>
+    <color name="daybgcolor">#07A5AA</color>
+
+</resources>
