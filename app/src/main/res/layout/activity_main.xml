@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/primary">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        app:cardCornerRadius="6dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="84dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QR Code Maker"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="250dp"
+            android:background="@color/primary_light"
+            android:layout_height="250dp"
+            android:id="@+id/qrImage"
+            android:visibility="gone"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lodaindAnimation"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_speed="1.25"
+                app:lottie_rawRes="@raw/qrcodeanimatoon"
+                />
+        <EditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/textForQR"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Text"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:gravity="center_horizontal" />
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_marginTop="6dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:background="@color/primary_dark"
+            android:textColor="@color/secondary_text"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/saveImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="64dp"
+        android:background="@color/primary_dark"
+        />
+</RelativeLayout>
