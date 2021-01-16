@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QR Scanner</string>
+    <string name="req_text">Please take the camera to the QR to scan</string>
+</resources>
