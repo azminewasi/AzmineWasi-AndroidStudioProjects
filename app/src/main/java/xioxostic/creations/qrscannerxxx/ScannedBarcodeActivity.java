@@ -162,20 +162,20 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
 
         String regexStr = "^[+]?[0-9]{10,13}$";
         if (scanned.contains("://")){
-            Toast.makeText(getApplicationContext(), "This is an URL.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "URL detected.", Toast.LENGTH_SHORT).show();
             showAleartDialogue("Do you want to follow the link?","URL");
 
         }
         else if (scanned.contains("@")){
-            Toast.makeText(getApplicationContext(), "This is an Email.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Email detected.", Toast.LENGTH_SHORT).show();
             showAleartDialogue("Do you want to send a mail to the address?","EMAIL");
         }
         else if (scanned.matches(regexStr)){
-            Toast.makeText(getApplicationContext(), "This is an Mobile Number", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Mobile Number detected.", Toast.LENGTH_SHORT).show();
             showAleartDialogue("Do you want to make a call?","CALL");
         }
         else if (scanned.contains("www")){
-            Toast.makeText(getApplicationContext(), "This is an URL.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "URL detected.", Toast.LENGTH_SHORT).show();
         }
     }
 
