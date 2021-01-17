@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FlashLight" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_dark</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

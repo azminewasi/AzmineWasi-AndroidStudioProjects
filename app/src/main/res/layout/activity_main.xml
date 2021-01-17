@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/fullscreenlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lighton"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            app:lottie_rawRes="@raw/red2"
+            app:lottie_autoPlay="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:layout_marginBottom="84dp"
+            android:rotation="180"
+            android:visibility="gone"
+            app:lottie_loop="true"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/mainlight"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/light"
+            app:lottie_autoPlay="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            app:lottie_loop="true"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/onbutton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/greensmoothflash"
+            app:lottie_autoPlay="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="84dp"
+            app:lottie_loop="true"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/offbutton"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:lottie_rawRes="@raw/lighton"
+            app:lottie_autoPlay="true"
+            app:lottie_speed="0.35"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="84dp"
+            android:visibility="gone"
+            app:lottie_loop="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/primary">
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_back"
+            android:layout_margin="24dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/rawicon"
+                />
+            <Switch
+                android:id="@+id/FullScreenTouchSense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fullscreen touch sensitivity   "
+                android:layout_marginTop="32dp"
+                android:textColor="@color/primary_text"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <Switch
+                android:id="@+id/LightOnOnStartUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turn light on app startup   "
+                android:layout_marginTop="16dp"
+                android:textColor="@color/primary_text"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <Button
+                android:id="@+id/savebutton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:padding="6dp"
+                android:text="Save"
+                android:textSize="16sp"
+                android:textColor="@color/primary_light"
+                android:background="@color/primary_dark"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/settingsbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_settings"
+        android:layout_margin="24dp"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
